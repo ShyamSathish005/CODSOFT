@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyam's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(13, 0, 59);
+            color: antiquewhite;
+            font-family: Poppins;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(67, 67, 148);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        nav ul li:hover {
+            color: rgb(27, 204, 189);
+            font-size: 1.2rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .first div {
+            width: 30%;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .rightsection img {
+            width: 100%;
+            margin: 70px 0;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .purple {
+            color: rgb(9, 207, 141);
+        }
+
+        .element {
+            color: aqua;
+        }
+
+        #element {
+            color: aqua;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(218, 207, 228);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .secondsection h1 {
+            font-size: 1.5rem;
+            font-family: Poppins;
+            font-style: bold;
+            height: 8vh;
+        }
+
+        .grey {
+            color: rgb(27, 204, 189);
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 1px 0; 
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            flex: 1;
+            background-color: rgb(27, 204, 189);
+            margin: 0 4px;
+            height: 2px;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 16px 0; 
+        }
+
+        .timeline-entry {
+            width: 70%;
+            max-width: 400px;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-entry h3 {
+            color: rgb(27, 204, 189);
+            margin-bottom: 5px;
+        }
+
+        .timeline-entry p {
+            color: #888;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(67, 67, 148);
+            color: azure;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shyam's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Shyam Sathish</span>
+                <br>
+                I am a Passionate <span id="element"></span>
+                <!-- Load library from the CDN -->
+                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                <!-- Setup and start animation! -->
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['Web Developer', 'Video Editor'],
+                        typeSpeed: 50,
+                    });
+                </script>
+            </div>
+            <div class="rightsection">
+                <img src="_653219e9-c123-4ca7-b802-0084c8f95bc0-removebg-preview.png" alt="Profile Picture">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="grey">What I have done so Far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-entry">
+                    <h3>Company 1</h3>
+                    <p>Position: Web Developer</p>
+                    <p>Worked on various web development projects, including frontend and backend development.</p>
+                </div>
+
+                <div class="timeline-entry">
+                    <h3>Company 2</h3>
+                    <p>Position: Video Editor</p>
+                    <p>Edited and produced high-quality videos for clients, ensuring a creative and engaging final product.</p>
+                </div>
+
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Shyam's Portfolio
+    </footer>
+</body>
+
+</html>
